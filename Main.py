@@ -11,6 +11,7 @@ from random import randint
 
 def main():
     #Display all the rules
+    print("********************Rules*****************")
     print("1. There will be 5 lives")
     print("2. For every wrong letter you lose one life and the person gets closer to being hanged")
     print("3. All the words will be more than 5 letters")
@@ -41,6 +42,7 @@ def main():
             #if the letter not a vowel make it _ to hide the letter
             t[i] = "_" 
     tword = "".join(t)
+    print(rword)
 
     #start the game
     chance = 5
@@ -66,6 +68,7 @@ def main():
     if chance == 0:
         print("You are hanged")
         print("Better luck next time")
+        print("The word was {}".format(rword))
     else:
         print("Contrulations {} you won".format(name))
 
